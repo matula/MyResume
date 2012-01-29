@@ -1,5 +1,6 @@
 <?php
-$myResume = new MatulaResume();
+
+$myResume = new Resume();
 
 // My Contact Information
 $myResume->myName = "Terry Matula";
@@ -53,10 +54,10 @@ $myResume->addInfo("<a href='http://twitter.com/terrymatula'>Twitter</a>", 'more
 echo $myResume;
 
 /**
- * Resume for Terry Matula
+ * A Resume Class for Terry Matula
  * @author Terry Matula
  */
-class MatulaResume
+class Resume
 {
 
     public $myName;
@@ -146,9 +147,13 @@ class MatulaResume
         if (!empty($this->moreInfo))
         {
             $output .= "<p class='subHeader'>More Information</p><ul id='info'>";
-            foreach ($this->moreInfo as $info)
+            // using a tad bit of SPL because I can
+            $infoArray = new ArrayObject($this->moreInfo);
+            $infoIt = $infoArray->getIterator();
+            while ($infoIt->valid())
             {
-                $output .= "<li>$info</li>";
+                $output .= "<li>{$infoIt->current()}</li>";
+                $infoIt->next();
             }
             $output .= "</ul>";
         }
