@@ -1,0 +1,72 @@
+body {
+    font: 14px Arial,Helvetica,sans-serif;
+    color: #333;
+}
+div#resume {
+    width: 540px;
+    margin: 0 auto;
+}
+h1, h3, h4 {
+    margin: 6px 0;
+}
+ul {
+    list-style: none;
+}
+li {
+    margin-top: 18px;
+    padding: 8px;
+    background: #efefef;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+ul#skills li, ul#info li {
+    margin-top:8px;
+}
+strong {
+    font-weight: bold;
+}
+em {
+    font-style: italic;
+}
+li strong, li em {
+    display:block;
+}
+li em {
+    font-size:12px;
+}
+h1#myName {
+    font-size:34px;
+    line-height:34px;
+}
+h3#myEmail a{
+    font-size:22px;
+    text-decoration: none;
+    color: #069;
+    line-height:26px;
+}
+h4#myPhone {
+    font-size:16px;
+    color:#999;
+    line-height:18px;
+}
+.subHeader {
+    margin-top: 14px;
+    border-top: 2px solid #bbb;
+    padding-top: 14px;
+    font-size: 22px;
+    font-weight:bold;
+}
+a[href^='http://twitter.com'] {
+    background: url(http://i.imgur.com/nk29M.png) no-repeat;
+    padding-left:20px
+}
+
+a[href^='http://careers.stackoverflow.com'] {
+    background: url(http://i.imgur.com/ZgIqc.png) no-repeat;
+    padding-left:20px
+}
+a[href^='https://github.com'] {
+    background: url(http://i.imgur.com/kAs5X.png) no-repeat;
+    padding-left:20px
+}
