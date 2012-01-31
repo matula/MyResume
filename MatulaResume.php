@@ -8,31 +8,27 @@ $myResume->myEmail = "terrymatula@gmail.com";
 $myResume->myPhone = "832-541-7215";
 
 // Places I've worked
-$workExperience1 = array();
-$workExperience1['company'] = "PetRelocation";
-$workExperience1['title'] = "Web Developer";
-$workExperience1['dates'] = "Dec 2009 - Present";
-$workExperience1['description'] = "Created and maintained lead gathering form, in Drupal and then a custom 
+$workExperience = array();
+$workExperience[0]['company'] = "PetRelocation";
+$workExperience[0]['title'] = "Web Developer";
+$workExperience[0]['dates'] = "Dec 2009 - Present";
+$workExperience[0]['description'] = "Created and maintained lead gathering form, in Drupal and then a custom 
     solution using the Codeigniter framework. Built landing pages using Wordpress, and a custom landing 
     page maker. Updated the company homepage, resulting in 50% more incoming leads.";
-$myResume->addWorkExperience($workExperience1);
 
-$workExperience2 = array();
-$workExperience2['company'] = "Clear Channel Radio";
-$workExperience2['title'] = "Online Training Developer";
-$workExperience2['dates'] = "Feb 2003 - May 2009";
-$workExperience2['description'] = "Created online training modules that were taken by Sales people and 
+$workExperience[1]['company'] = "Clear Channel Radio";
+$workExperience[1]['title'] = "Online Training Developer";
+$workExperience[1]['dates'] = "Feb 2003 - May 2009";
+$workExperience[1]['description'] = "Created online training modules that were taken by Sales people and 
     On-air personalities nationwide, including a quiz/grading engine. Designed and developed an 
     applicant tracking system.";
-$myResume->addWorkExperience($workExperience2);
 
-$workExperience3 = array();
-$workExperience3['company'] = "KKBQ-FM";
-$workExperience3['title'] = "Morning Show Director";
-$workExperience3['dates'] = "Aug 1997 - Apr 2000";
-$workExperience3['description'] = "Operated the board, put together audio elements for 'bits' and 
+$workExperience[2]['company'] = "KKBQ-FM";
+$workExperience[2]['title'] = "Morning Show Director";
+$workExperience[2]['dates'] = "Aug 1997 - Apr 2000";
+$workExperience[2]['description'] = "Operated the board, put together audio elements for 'bits' and 
     parodies, kept the show on schedule";
-$myResume->addWorkExperience($workExperience3);
+$myResume->addWorkExperience($workExperience);
 
 // My Skills
 $mySkills = array(
@@ -57,8 +53,7 @@ echo $myResume;
  * A Resume Class for Terry Matula
  * @author Terry Matula
  */
-class Resume
-{
+class Resume {
 
     public $myName;
     public $myEmail;
@@ -76,7 +71,13 @@ class Resume
     {
         if (is_array($workArray))
         {
-            $this->myJobs[] = $workArray;
+            $jobsArray = new ArrayObject($workArray);
+            $jobsIt = $jobsArray->getIterator();
+            while ($jobsIt->valid())
+            {
+                $this->myJobs[] = $jobsIt->current();
+                $jobsIt->next();
+            }
         }
     }
 
@@ -147,7 +148,6 @@ class Resume
         if (!empty($this->moreInfo))
         {
             $output .= "<p class='subHeader'>More Information</p><ul id='info'>";
-            // using a tad bit of SPL because I can
             $infoArray = new ArrayObject($this->moreInfo);
             $infoIt = $infoArray->getIterator();
             while ($infoIt->valid())
