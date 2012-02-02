@@ -11,7 +11,7 @@ $myResume->myPhone = "832-541-7215";
 $workExperience = array();
 $workExperience[0]['company'] = "PetRelocation";
 $workExperience[0]['title'] = "Web Developer";
-$workExperience[0]['dates'] = "Dec 2009 - Present";
+$workExperience[0]['dates'] = "Dec 2009 - Feb 2012";
 $workExperience[0]['description'] = "Created and maintained lead gathering form, in Drupal and then a custom 
     solution using the Codeigniter framework. Built landing pages using Wordpress, and a custom landing 
     page maker. Updated the company homepage, resulting in 50% more incoming leads.";

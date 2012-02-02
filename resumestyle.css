@@ -70,3 +70,6 @@ a[href^='https://github.com'] {
     background: url(http://i.imgur.com/kAs5X.png) no-repeat;
     padding-left:20px
 }
+li:hover {
+    background: #ffd;
+}
