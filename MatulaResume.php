@@ -9,24 +9,31 @@ $myResume->myPhone = "832-541-7215";
 
 // Places I've worked
 $workExperience = array();
-$workExperience[0]['company'] = "PetRelocation";
+
+$workExperience[0]['company'] = "White Lion Interactive";
 $workExperience[0]['title'] = "Web Developer";
-$workExperience[0]['dates'] = "Dec 2009 - Feb 2012";
-$workExperience[0]['description'] = "Created and maintained lead gathering form, in Drupal and then a custom 
+$workExperience[0]['dates'] = "Apr 2012 - Present";
+$workExperience[0]['description'] = "Front-end and back-end development for numerous clients. Use the Kohana framework, 
+	with javascript, HTML5, and CSS3 on the front-end.";
+	
+$workExperience[1]['company'] = "PetRelocation";
+$workExperience[1]['title'] = "Web Developer";
+$workExperience[1]['dates'] = "Dec 2009 - Feb 2012";
+$workExperience[1]['description'] = "Created and maintained lead gathering form, in Drupal and then a custom 
     solution using the Codeigniter framework. Built landing pages using Wordpress, and a custom landing 
     page maker. Updated the company homepage, resulting in 50% more incoming leads.";
 
-$workExperience[1]['company'] = "Clear Channel Radio";
-$workExperience[1]['title'] = "Online Training Developer";
-$workExperience[1]['dates'] = "Feb 2003 - May 2009";
-$workExperience[1]['description'] = "Created online training modules that were taken by Sales people and 
+$workExperience[2]['company'] = "Clear Channel Radio";
+$workExperience[2]['title'] = "Online Training Developer";
+$workExperience[2]['dates'] = "Feb 2003 - May 2009";
+$workExperience[2]['description'] = "Created online training modules that were taken by Sales people and 
     On-air personalities nationwide, including a quiz/grading engine. Designed and developed an 
     applicant tracking system.";
 
-$workExperience[2]['company'] = "KKBQ-FM";
-$workExperience[2]['title'] = "Morning Show Director";
-$workExperience[2]['dates'] = "Aug 1997 - Apr 2000";
-$workExperience[2]['description'] = "Operated the board, put together audio elements for 'bits' and 
+$workExperience[3]['company'] = "KKBQ-FM";
+$workExperience[3]['title'] = "Morning Show Director";
+$workExperience[3]['dates'] = "Aug 1997 - Apr 2000";
+$workExperience[3]['description'] = "Operated the board, put together audio elements for 'bits' and 
     parodies, kept the show on schedule";
 $myResume->addWorkExperience($workExperience);
 
@@ -37,15 +44,20 @@ $mySkills = array(
     'Javascript/jQuery',
     'CSS',
     'Codeigniter Framework',
+	'Kohana',
+	'Laravel',
     'Wordpress');
 $myResume->addInfo($mySkills, 'mySkills');
 $myResume->addInfo('API access and oAuth', 'mySkills');
 
 // Links for my places online
-$myResume->addInfo("My Portfolio: <a href='http://terrymatula.com'>terrymatula.com</a>", 'moreInfo');
+$myResume->addInfo("<strong>My Portfolio</strong> <a href='http://terrymatula.com'>terrymatula.com</a>", 'moreInfo');
 $myResume->addInfo("<a href='https://github.com/matula'>Github</a>", 'moreInfo');
 $myResume->addInfo("<a href='http://careers.stackoverflow.com/matula'>StackOverflow</a>", 'moreInfo');
 $myResume->addInfo("<a href='http://twitter.com/terrymatula'>Twitter</a>", 'moreInfo');
+
+// Links for my certifications
+$myResume->addInfo("<strong>My Certifications</strong> CIW Web Foundations Associate, CIW Web Design Specialist", 'moreInfo');
 
 echo $myResume;
 
