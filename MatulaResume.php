@@ -30,22 +30,17 @@ $workExperience[2]['description'] = "Created online training modules that were t
     On-air personalities nationwide, including a quiz/grading engine. Designed and developed an 
     applicant tracking system.";
 
-$workExperience[3]['company'] = "KKBQ-FM";
-$workExperience[3]['title'] = "Morning Show Director";
-$workExperience[3]['dates'] = "Aug 1997 - Apr 2000";
-$workExperience[3]['description'] = "Operated the board, put together audio elements for 'bits' and 
-    parodies, kept the show on schedule";
 $myResume->addWorkExperience($workExperience);
 
 // My Skills
 $mySkills = array(
     'PHP',
     'MySQL',
-    'Javascript/jQuery',
+    'JavaScript/jQuery',
     'CSS',
     'Codeigniter Framework',
-	'Kohana',
-	'Laravel',
+    'Kohana',
+    'Laravel',
     'Wordpress');
 $myResume->addInfo($mySkills, 'mySkills');
 $myResume->addInfo('API access and oAuth', 'mySkills');
@@ -57,7 +52,7 @@ $myResume->addInfo("<a href='http://careers.stackoverflow.com/matula'>StackOverf
 $myResume->addInfo("<a href='http://twitter.com/terrymatula'>Twitter</a>", 'moreInfo');
 
 // Links for my certifications
-$myResume->addInfo("<strong>My Certifications</strong> CIW Web Foundations Associate, CIW Web Design Specialist", 'moreInfo');
+$myResume->addInfo("<strong>My Certifications</strong> CIW Web Foundations Associate, CIW Web Design Specialist, CIW JavaScript Specialist", 'moreInfo');
 
 echo $myResume;
 
