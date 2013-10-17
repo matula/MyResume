@@ -9,24 +9,28 @@ $myResume->myPhone = "832-541-7215";
 
 // Places I've worked
 $workExperience = array();
+$workExperience[0]['company'] = 'Basanty.com';
+$workExperience[0]['title'] = 'Senior Software Developer';
+$workExperience[0]['dates'] = 'Sep 2013 - present';
+$workExperience[0]['description'] = 'Develop Basanty.com';
 
-$workExperience[0]['company'] = "White Lion Interactive";
-$workExperience[0]['title'] = "Web Developer";
-$workExperience[0]['dates'] = "Apr 2012 - Present";
-$workExperience[0]['description'] = "Front-end and back-end development for numerous clients. Use the Kohana framework, 
+$workExperience[1]['company'] = "White Lion Interactive";
+$workExperience[1]['title'] = "Web Developer";
+$workExperience[1]['dates'] = "Apr 2012 - Sep 2013";
+$workExperience[1]['description'] = "Front-end and back-end development for numerous clients. Use the Kohana framework, 
 	with javascript, HTML5, and CSS3 on the front-end.";
 	
-$workExperience[1]['company'] = "PetRelocation";
-$workExperience[1]['title'] = "Web Developer";
-$workExperience[1]['dates'] = "Dec 2009 - Feb 2012";
-$workExperience[1]['description'] = "Created and maintained lead gathering form, in Drupal and then a custom 
+$workExperience[2]['company'] = "PetRelocation";
+$workExperience[2]['title'] = "Web Developer";
+$workExperience[2]['dates'] = "Dec 2009 - Feb 2012";
+$workExperience[2]['description'] = "Created and maintained lead gathering form, in Drupal and then a custom 
     solution using the Codeigniter framework. Built landing pages using Wordpress, and a custom landing 
     page maker. Updated the company homepage, resulting in 50% more incoming leads.";
 
-$workExperience[2]['company'] = "Clear Channel Radio";
-$workExperience[2]['title'] = "Online Training Developer";
-$workExperience[2]['dates'] = "Feb 2003 - May 2009";
-$workExperience[2]['description'] = "Created online training modules that were taken by Sales people and 
+$workExperience[3]['company'] = "Clear Channel Radio";
+$workExperience[3]['title'] = "Online Training Developer";
+$workExperience[3]['dates'] = "Feb 2003 - May 2009";
+$workExperience[3]['description'] = "Created online training modules that were taken by Sales people and 
     On-air personalities nationwide, including a quiz/grading engine. Designed and developed an 
     applicant tracking system.";
 
