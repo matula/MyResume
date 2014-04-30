@@ -1,17 +1,21 @@
 body {
-    font: 14px Arial,Helvetica,sans-serif;
+    font: 14px Arial, Helvetica, sans-serif;
     color: #333;
 }
+
 div#resume {
     width: 540px;
     margin: 0 auto;
 }
+
 h1, h3, h4 {
     margin: 6px 0;
 }
+
 ul {
     list-style: none;
 }
+
 li {
     margin-top: 18px;
     padding: 8px;
@@ -20,56 +24,73 @@ li {
     -webkit-border-radius: 6px;
     border-radius: 6px;
 }
+
 ul#skills li, ul#info li {
-    margin-top:8px;
+    margin-top: 8px;
 }
+
 strong {
     font-weight: bold;
 }
+
 em {
     font-style: italic;
 }
+
 li strong, li em {
-    display:block;
+    display: block;
 }
+
 li em {
-    font-size:12px;
+    font-size: 12px;
 }
+
 h1#myName {
-    font-size:34px;
-    line-height:34px;
+    font-size: 34px;
+    line-height: 34px;
 }
-h3#myEmail a{
-    font-size:22px;
+
+h3#myEmail a {
+    font-size: 22px;
     text-decoration: none;
     color: #069;
-    line-height:26px;
+    line-height: 26px;
 }
+
 h4#myPhone {
-    font-size:16px;
-    color:#999;
-    line-height:18px;
+    font-size: 16px;
+    color: #999;
+    line-height: 18px;
 }
+
 .subHeader {
     margin-top: 14px;
     border-top: 2px solid #bbb;
     padding-top: 14px;
     font-size: 22px;
-    font-weight:bold;
+    font-weight: bold;
 }
+
 a[href^='http://twitter.com'] {
-    background: url(http://i.imgur.com/nk29M.png) no-repeat;
-    padding-left:20px
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowNTgwMTE3NDA3MjA2ODExQTQxQUNFN0NCOEMyNEMzNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo3NUYyNkE5MDQ5QzYxMUUwQTJGN0YyQzFDMzFCQjZCMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo3NUYyNkE4RjQ5QzYxMUUwQTJGN0YyQzFDMzFCQjZCMyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkFGREYyRDc2MTIyMDY4MTFBNDFBQ0U3Q0I4QzI0QzM2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjA1ODAxMTc0MDcyMDY4MTFBNDFBQ0U3Q0I4QzI0QzM2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+6mUHuwAAAmhJREFUeNqkU0toU0EUvTPz8j5JXkhMGvMRE1riSmw3NQZE0pUfNAvFRVeNIChWrJ+FK6laijs/WHVTWhBx4aZFkEIXWnGpmLqo+AFJqzSBQBOtTdN83njnJSlRuhByeffNe8Pce+459w7hnEM7RqFNI77B2/9xiuLDkkBZGLgBvFa9LtZGBUQcCOPLuXWNDKhinWQO96Ti6rhyPLanislaKBACkaB3N7Xqearap4gkJwViE5nKWpI5PUlpmw9Ad9uff8mNgEWOm8BozB49DAujp8t+t8v1JlNMcEk+CZReBA4aYWxOc7lfEN2jU80GIFnMIDvjgY3S+hNBg4JhQODyo/Tiyu9xyaZTgWTxBJ2SyzuMZadqqiNAFK2pA4hEFcW2H/fiwKQks+89CCLJ9PnEry6n6nj5Y62by5pEZEVw96EDYRIIqiYrXA0OFuA8GQ13pOpkcRYClx4WcoXVByEbfFMYLSF3E42IshvBDWHAqdsKXTt86XwZAlJ9kwOvVmAgGlkaiMJI/PHb0e/r0LkpZotx5J3odM3c6IvM4m+a+C/cv4PTeA+MWlq0jFl1OLqv++lsptxvlv53NOhQKcyfifUFr07M83IJ6PCJ+FeLzfEa25iiivYKheEzn7P9zUFpNRmM0s0D4XERbBRXgVc2gCC6bym/durs1LtjC7lijFhk7L2K3GWcErqJ7FVp9los+OzIru23AkNjWV6r1BXxD43B8t1BFb8PvV/+GZ/4kOn5uFIKmcJhYMghZ3t99sVzvTvn8Mw0ip3llbKpm5ngn9soxrkHPdyylxVioX/a8pq0e53/CDAAjXrI68wuXKYAAAAASUVORK5CYII=) no-repeat;
+    padding-left: 20px
 }
 
 a[href^='http://careers.stackoverflow.com'] {
-    background: url(http://i.imgur.com/ZgIqc.png) no-repeat;
-    padding-left:20px
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFdQTFRF22Ey2FYjz7ig5JYx/PTw4IYR9dew99/A+uji993T5Y5s5NbJ++/f1sKt4HhP6Jp7u5l3+PXx6KZQtI9p5p5B7r6A88+g/ffv4cKW6q5gmWYzZmZm////RdPA9QAAAHRJREFUeNp0ztcOwyAMQFGbEVZ205Hg///OyoCjRGrvC9YRC6hmAEMZoAFNCP4GFHE0Au7Fh0aMAqvVHZEHnBr0u2XyAEbueD+11S6EukMNaaG+21Z55eBm9XECan4Uqx/LuaxLGhTxzJBb/+GswbUf8BVgAHJEFvp1ypeyAAAAAElFTkSuQmCC) no-repeat;
+    padding-left: 20px
 }
+
 a[href^='https://github.com'] {
-    background: url(http://i.imgur.com/kAs5X.png) no-repeat;
-    padding-left:20px
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9kMBxc1LsZMSHMAAAIeSURBVDjLjZIxS3JxGMV/127eJG1wCC63waEGEYnGqA9wv4LhINIHCFyC1iBwaXExaJSGCEKKpih0cQgiWkQ/gEpDXBHE1Hsaeru+Q72+Z/rD/3kO5znnGJLEL5BEuVxmMBhwcHCAaZo/Dv2KXq+neDyuUCikZrP544zJP2BZFolEAs/zWFlZod/v0+12sW2bWCw2X4EkeZ6n9/d3SdLp6akikYiurq6Cf+Pbg0qlwvn5Ob7v47ounU6Hvb09rq+vGQwG5HI5MpkM7XabVCpFJpPh6OjoS0GlUhGg9fV1pVIpAQL0+PiodDot27ZVr9flOI4Ara2tqVAoSJKQpJ2dHQFqNpvyPE+WZcl1XU0mE21ubspxHElSsVgUoIuLC02n05mJjuMA8PT0hG3bjEYjHMdhYWGBv1MOhUIAmKY5ewMcHx/z8vJCNpsFIJFIUCgU+KMwIPB9H4BwODwjBdjY2CCdTmNZFqVSiUajQTKZZDqdIilYjEQiANze3nJ/fz8jABgOhxiGwerqKoZhAGAYBh8fH4xGIyaTCdvb2ywtLXF2dsb+/v6sB61WKzASUCwW0+HhocbjsarVqi4vLzUejyVJDw8PKhaLurm5maWwu7urxcVF3d3d6fX1Va7rCtDz8/O8nn2l4Hkevu/z9vZGNBoNzlleXmYuvmUlk8ngBNM0dXJyov9BUOVarUa1WqXf77O1tUU+n8eyrLkCPgEfMdhW+DX8QAAAAABJRU5ErkJggg==) no-repeat;
+    padding-left: 20px
 }
+
+a[href^='http://www.linkedin.com'] {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAm5JREFUeNp8U0trU0EU/mZyb9I8amrQYGq0GjdWio/iwq7qUgVduVDciRv39U+04MKNC7euRFAoisVFUKGKCwWLaNUaa8VXmia1yU3ua8ZzJknTKvRcLnfmzJzv+87jiqniwr1KwzsthRAg02ib2GLNppTGjlT0obhy543avz0h3FDBDzUICDFLYiPYRusCSFos1RxtLTt+4GnHHhqI49xIFnM/1/C0tAJLSmxlDFBr+qFVaXqouQGuju3FiT1pjObTePShjLrrQkqxOUr3JDC844WwVl3f+DnoQCaO50s1LNYcKN1lEubcpxQZz45IA8I4fqAgCpNFT0aEzRdz/TFUHR91Qk5GI5SGwBqp47NCJoFWEOJz1THpRRhB6cByfYV6I8S18QIuH8/jfbmB87df4fqZYYwNDeDxx2UMZ1MYHdyGJjHef/sLEw/eUToaESKQvh+iSSxJO2IUZJNRuLTPJGyzvnR0EAd3pkhJiDh15+KRHMb3ZVAjpT6Ry5ByC0laQF+YXDXlFpr82OZJ0aHJIk7enEW1GRjfyK5+tIiEY6VH1QoDjaBTNU2PF+j1GZj9UsXi7zpef/+D0opjfFwbRUQcK02gIhW6HWJwaN/tQqDUehe7PnOX/BwrjVP3Drv9XtfAE65NzTbPQydGmhN6+zrjm4pZZs9tZItTcbt3UrG2z4x6h9kyyDQcM/NlU7hvqy2Clbj14iuefKrgJQ0Wn7PdeFZCPt2H4kKFC2FwhZyY1opXPr1UfTNurILaxnmaYFbDRF7QZrZobwv6SFgXju2+Oz3345SK/jP4Uev/PyjW80n6n88ezs38FWAAzAg/WebH1yoAAAAASUVORK5CYII=) no-repeat;
+    padding-left: 20px
+}
+
 li:hover {
     background: #ffd;
 }
